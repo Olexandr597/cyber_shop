@@ -1,0 +1,15 @@
+.header {
+	outline: SOLID 1px red;
+	display: flex;
+	height: 88px;
+	width: 1440px;
+	background-color: #b5b5b5;
+}
+.navList {
+	display: flex;
+	gap: 20px;
+	color: #dfdfdf;
+}
+.navItem {
+	color: #000000;
+}

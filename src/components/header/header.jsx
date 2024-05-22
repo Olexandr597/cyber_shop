@@ -1,8 +1,9 @@
-import { Search } from 'lucide-react'
+import { Heart, Search, ShoppingCart, User } from 'lucide-react'
+import styles from './header.module.css'
 
 const Header = () => {
 	return (
-		<header className='header'>
+		<header className={styles.header}>
 			<img src='/public/Logo.svg' alt='Logo' className='logo' />
 			<form className='search-form'>
 				<div className='search-container'>
@@ -11,11 +12,11 @@ const Header = () => {
 				</div>
 			</form>
 			<nav className='navigation'>
-				<ul className='nav-list'>
+				<ul className={styles.navList}>
 					<li className='nav-item'>
 						<a href='/'>Home</a>
 					</li>
-					<li className='nav-item'>
+					<li className={styles.navItem}>
 						<a href='/about'>About</a>
 					</li>
 					<li className='nav-item'>
@@ -26,6 +27,12 @@ const Header = () => {
 					</li>
 				</ul>
 			</nav>
+
+			<div>
+				<Heart />
+				<ShoppingCart />
+				<User />
+			</div>
 		</header>
 	)
 }
